@@ -5,8 +5,15 @@
   </head>
   <body>
     <h1>AutoMart</h1>
-    <p>{{ auto_name }}</p>
-    <p>{{ auto_model }}</p>
-    <p>{{ auto_value }}</p>
+    {% for auto in autos %}
+      <p>{{ auto.nombre }}</p>
+      <p>{{ auto.modelo }}</p>
+      {% if auto.valor > 0 %}
+        <p>{{ auto.valor }}</p>
+      {% else %}
+        <p>De coleccion</p>
+      {% endif %}
+      <hr />
+    {% endfor %}
   </body>
 </html>
