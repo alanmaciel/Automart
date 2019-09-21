@@ -17,7 +17,7 @@ class Auto:
 
 autos = [
   Auto('Ford Focus', 50000, 88000, 2015, 'blanco', "leon", "https://www.autobild.es/sites/autobild.es/public/styles/768x432/public/marcas/fotos/Principal_Lexus.jpg?itok=LRDPS2KG" ),
-  Auto('Porsche', 1500000, 48000, 2017, 'gris', "queretaro", "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2016_Lexus_RC_300h_F_Sport_CVT_2.5_Rear.jpg" ),
-  Auto('Batimovil', 0, 128000, 1963, 'negro', "california", "https://en.wikipedia.org/wiki/Lincoln_Futura#/media/File:1960s_Batmobile_(FMC).jpg"),
-  Auto('Lexus', 560000, 12000, 2019, 'rojo', "leon", "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2016_Lexus_RC_300h_F_Sport_CVT_2.5_Rear.jpg" )
+  Auto('Porsche', 1500000, 48000, 2017, 'gris', "queretaro", "https://m.atcdn.co.uk/vms/media/w1366/23d757c5424f485f92db7f76b028a2cf.jpg" ),
+  Auto('Batimovil', 0, 128000, 1963, 'negro', "california", "https://vignette.wikia.nocookie.net/batman/images/8/80/1960%27s_TV_BAtmobile_01.jpg/revision/latest/scale-to-width-down/700?cb=20090609183446"),
+  Auto('Lexus', 560000, 12000, 2019, 'rojo', "leon", "https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/make/lexus/lc/2018/lc-500-kbb/01-2018-Lexus-LC-500-Action-KBB.jpg" )
 ]
