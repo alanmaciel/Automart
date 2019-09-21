@@ -6,3 +6,7 @@ h1 {
   max-width: 100%;
   height: 250px;
 }
+
+.jumbotron {
+  margin-bottom: 0;
+}
