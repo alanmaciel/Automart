@@ -17,12 +17,5 @@ def show(request, auto_id):
 def post_auto(request):
   form = AutoForm(request.POST)
   if form.is_valid():
-    auto = Auto(nombre = form.cleaned_data['nombre'],
-                valor = form.cleaned_data['valor'],
-                km = form.cleaned_data['km'],
-                modelo = form.cleaned_data['modelo'],
-                color = form.cleaned_data['color'],
-                localizacion = form.cleaned_data['localizacion'],
-                img_url = form.cleaned_data['img_url'])
-    auto.save()
+    form.save(commit = True)
   return HttpResponseRedirect('/')
