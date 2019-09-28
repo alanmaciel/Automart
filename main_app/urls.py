@@ -1,4 +1,6 @@
 from django.conf.urls import url
+from django.conf import settings
+from django.views.static import serve
 from . import views
 
 urlpatterns = [
@@ -11,3 +13,12 @@ urlpatterns = [
 # los parentesis capturan el valor. 
 # al capturar el valor este se pasa como parametro
 # al detail view, ej. localhost/10
+
+if settings.DEBUG:
+    urlpatterns += [
+        url(r'^media/(?P<path>.*)$', serve,
+            {'document_root': settings.MEDIA_ROOT,}),
+    ]
+
+# envia cualquier url que haga match con media/ a una view
+# de django llamada static.serve()

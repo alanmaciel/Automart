@@ -10,6 +10,8 @@ class Auto(models.Model):
   color = models.CharField(max_length=100)
   localizacion = models.CharField(max_length=100)
   img_url = models.CharField(max_length=100)
+  image = models.ImageField(upload_to='auto_images',
+                            default='media/default.png')
 
   def __str__(self):
     return self.nombre

@@ -15,7 +15,7 @@ def show(request, auto_id):
   return render(request, 'show.html', {'auto' : auto})
 
 def post_auto(request):
-  form = AutoForm(request.POST)
+  form = AutoForm(request.POST, request.FILES)
   if form.is_valid():
     form.save(commit = True)
   return HttpResponseRedirect('/')

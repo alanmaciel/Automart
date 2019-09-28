@@ -3,7 +3,7 @@
 
 {% block content %}
   <h1>{{ auto.nombre }}</h1>
-  <img src="{{ auto.img_url }}" class="auto-picture">
+  <img src="{{ auto.image.url }}" class="auto-picture">
   <p>Modelo: <strong>{{ auto.modelo }}</strong></p>
   {% if auto.valor > 0 %}
     <p>Precio: <strong>${{ auto.valor }}</strong></p>
