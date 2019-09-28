@@ -1,0 +1,41 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AutoMart</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'estilos.css' %}" />
+  </head>
+  <body>
+   
+<header>
+    <nav>
+        <div class="navbar navbar-light bg-light shadow-sm">
+            <div class="container d-flex justify-content-between">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <img src="{% static 'images/logo.png' %}" width="100px" alt="AutoMart">
+                    <strong>Automart</strong>
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main role="main">
+{% block content %}
+{% endblock %}
+</main>
+<footer class="text-muted">
+    <div class="container">
+        <p class="float-right">
+            <a href="#">Back to top</a>
+        </p>
+        <p> © Bootstrap, but please download and customize it for yourself!</p>
+        <p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a
+                href="/docs/4.3/getting-started/introduction/">getting started guide</a>.</p>
+    </div>
+</footer>
+
+</body>
+</html>
