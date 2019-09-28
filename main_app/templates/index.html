@@ -37,7 +37,9 @@
                 {% for auto in autos %}
                   <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
-                      <img src="{{ auto.img_url }}" class="auto-picture" >
+                      <a href="/{{auto.id}}/">
+                        <img src="{{ auto.img_url }}" class="auto-picture" >
+                      </a>
                       <div class="card-body">
                         <h3>{{ auto.nombre }}</h3>
                         <p>Modelo: <strong>{{ auto.modelo }}</strong></p>
