@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AutoMart - {{ auto.nombre }}</title>
+</head>
+<body>
+    <h1>{{ auto.nombre }}</h1>
+    <img src="{{ auto.img_url }}" class="auto-picture" >
+    <p>Modelo: <strong>{{ auto.modelo }}</strong></p>
+    {% if auto.valor > 0 %}
+      <p>Precio: <strong>${{ auto.valor }}</strong></p>
+    {% else %}
+      <p>De coleccion</p>
+    {% endif %}
+    <p>color: <strong>{{ auto.color }}</strong></p>
+</body>
+</html>
