@@ -23,13 +23,14 @@
               <img src="{{ auto.image.url }}" class="auto-picture">
             </a>
             <div class="card-body">
-              <h3>{{ auto.nombre }}</h3>
+              <h3>{{ auto }}</h3>
               <p>Modelo: <strong>{{ auto.modelo }}</strong></p>
               {% if auto.valor > 0 %}
               <p>Precio: <strong>${{ auto.valor }}</strong></p>
               {% else %}
               <p>De coleccion</p>
               {% endif %}
+              <a href="/user/{{ auto.user.username }}">de: {{ auto.user.username }}</a>
             </div>
           </div>
         </div>
