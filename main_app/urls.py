@@ -10,6 +10,7 @@ urlpatterns = [
     url(r'^post_url/$', views.post_auto, name = 'post_auto'),
     url(r'^login/$', views.login_view, name = 'login'),
     url(r'^logout/$', views.logout_view, name='logout'),
+    url(r'^clap_auto/$', views.clap_auto, name='clap_auto'),
 ]
 
 # [0-9]+ hace match con cualquier numero

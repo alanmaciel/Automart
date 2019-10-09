@@ -13,6 +13,7 @@ class Auto(models.Model):
   img_url = models.CharField(max_length=100)
   image = models.ImageField(upload_to='auto_images',
                             default='media/default.png')
+  claps = models.IntegerField(default=0)
 
   def __str__(self):
     return self.nombre

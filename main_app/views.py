@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 from .models import Auto
 from .forms import AutoForm, LoginForm
 from .models import User
@@ -56,3 +56,16 @@ def login_view(request):
 def logout_view(request):
   logout(request)
   return HttpResponseRedirect('/')
+
+def clap_auto(request):
+  auto_id = request.GET.get('auto_id', None)
+
+  claps = 0
+  if (auto_id):
+    auto = Auto.objects.get(id = int(auto_id))
+    if auto is not None:
+      claps = auto.claps + 1
+      auto.claps = claps
+      auto.save()
+  
+  return HttpResponse(claps)

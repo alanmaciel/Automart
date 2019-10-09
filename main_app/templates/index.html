@@ -30,7 +30,14 @@
               {% else %}
               <p>De coleccion</p>
               {% endif %}
+              <span class="glyphicon glyphicon-print"></span>
               <a href="/user/{{ auto.user.username }}">de: {{ auto.user.username }}</a>
+
+              <button id="claps" data-id="{{auto.id}}">
+                      class="btn btn-mini btn-success glyphicon gliyphicon-hand-ok"
+                      type="button">
+                      {% if auto.claps > 0 %} {{ auto.claps }} {% endif %}
+              </button>
             </div>
           </div>
         </div>
