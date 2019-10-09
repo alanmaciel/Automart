@@ -4,6 +4,7 @@ h1 {
 
 .auto-picture {
   max-width: 100%;
+  height: 200px;
 }
 
 .jumbotron {
