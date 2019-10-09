@@ -3,7 +3,7 @@ from django.http import HttpResponseRedirect
 from .models import Auto
 from .forms import AutoForm, LoginForm
 from .models import User
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 
 # Create your views here.
 def index(request):
@@ -51,3 +51,8 @@ def login_view(request):
 
     form = LoginForm()
     return render(request, 'login.html', {'form':form})
+
+
+def logout_view(request):
+  logout(request)
+  return HttpResponseRedirect('/')
