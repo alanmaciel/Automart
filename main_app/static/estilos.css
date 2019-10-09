@@ -18,3 +18,7 @@ footer {
 .right-side {
   padding-right: 45px;
 }
+
+.mb-4, .my-4 {
+  height: 400px;
+}
