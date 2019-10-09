@@ -2,13 +2,19 @@
 {% load staticfiles %}
 {% block content %}
 
-<h1><Login</h1>
-
-<form method = "post" action ".">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <input type="submit" value="Submit" />
-</form>
-
+<div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h1>Login</h1> 
+        <form method="post" action ".">
+          {% csrf_token %}
+          {{ form.as_p }}
+          <input type="submit" value="Entrar" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 {% endblock %}
