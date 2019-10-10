@@ -31,13 +31,13 @@
               <p>De coleccion</p>
               {% endif %}
               <span class="glyphicon glyphicon-print"></span>
-              <a href="/user/{{ auto.user.username }}">de: {{ auto.user.username }}</a>
-
-              <button id="claps" data-id="{{auto.id}}">
-                      class="btn btn-mini btn-success glyphicon gliyphicon-hand-ok"
+              <button id="claps" data-id="{{auto.id}}"
+                      class="btn btn-mini btn-success fas fa-praying-hands pull-right"
                       type="button">
                       {% if auto.claps > 0 %} {{ auto.claps }} {% endif %}
               </button>
+              <a href="/user/{{ auto.user.username }}">de: {{ auto.user.username }}</a>
+
             </div>
           </div>
         </div>
