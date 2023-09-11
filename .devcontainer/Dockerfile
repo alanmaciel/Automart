@@ -1,0 +1,1 @@
+RUN sudo apt-get update && sudo apt-get install gnupg2 -y
