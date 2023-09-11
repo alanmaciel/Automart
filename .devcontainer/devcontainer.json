@@ -12,24 +12,23 @@
   // "features": {},
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  // "forwardPorts": [],
+  "forwardPorts": [8000],
 
   // Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand": "pip3 install --user -r requirements.txt",
 
   // Configure tool-specific properties.
-  // "customizations": {},
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "GitHub.vscode-pull-request-github",
+        "GitHub.codespaces",
+        "eamodio.gitlens"
+      ]
+    }
+  },
 
   // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-"remoteUser": "vscode",
-"customizations": {
-	"vscode": {
-		"extensions": [
-			"ms-azuretools.vscode-docker",
-			"GitHub.vscode-pull-request-github",
-			"GitHub.codespaces",
-			"eamodio.gitlens"
-		]
-	}
-}
+  "remoteUser": "vscode"
 }
